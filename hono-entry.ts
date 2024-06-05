@@ -27,6 +27,10 @@ app.all("*", async (c, next) => {
 	await next();
 });
 
+app.get("/ocoro", async (c) => {
+	return c.json({ message: "Hello World" })
+})
+
 app.post("/_telefunc", async (c) => {
 	const httpResponse = await telefunc({
 		url: c.req.url.toString(),

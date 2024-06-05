@@ -11,6 +11,7 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { navigate } from "vike/client/router";
 import {
+	Icon123,
 	IconChevronDown,
 	IconFileInvoice,
 	IconHistory,
@@ -40,6 +41,7 @@ const links: Links[] = [
 	//   ],
 	// },
 	{ link: "/restaurant/orders", label: "Ordenes", icon: IconFileInvoice },
+	{ link: "/inventory", label: "Inventario", icon: Icon123 },
 	{ link: "/restaurant/history", label: "Historial", icon: IconHistory },
 	{ link: "/restaurant/billing", label: "Facturacion", icon: IconInvoice },
 	// {
